@@ -3,4 +3,6 @@
 <input type="text" [(ngModel)]="title" required>
 </div>
 <button (click)="fnc()">Click</button>
-<app-home [msg]="'Welcome to HCL'"></app-home>
+
+<app-home [msg]="'Welcome to HCL'" (onCall)="display($event)"></app-home>
+<p>{{data}}</p>

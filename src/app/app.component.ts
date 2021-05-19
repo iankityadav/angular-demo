@@ -20,4 +20,7 @@ export class AppComponent {
   public fnc():void{
     this.data='jhgd'
   }
+  display(msg:string):void{
+    this.data = msg
+  }
 }
