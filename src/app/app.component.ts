@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title:string = 'demo';
-  data:string = "abc"
+  data:string = ""
   constructor(){
     console.log(`new data - ${this.data}`)
   }
