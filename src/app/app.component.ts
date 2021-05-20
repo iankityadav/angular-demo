@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title:string = 'demo';
   data:string = ""
+  showColor:boolean = false
   constructor(){
     console.log(`new data - ${this.data}`)
   }
@@ -22,5 +23,8 @@ export class AppComponent {
   }
   display(msg:string):void{
     this.data = msg
+  }
+  changeColor(){
+    this.showColor = !this.showColor
   }
 }

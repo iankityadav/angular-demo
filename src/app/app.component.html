@@ -1,3 +1,4 @@
+<!--
 <div>{{title}} is running on port :{{42*100}}</div>
 <div>
 <input type="text" [(ngModel)]="title" required>
@@ -8,3 +9,8 @@
 <p>{{data}}</p>
 
 <app-interest></app-interest>
+-->
+<div>
+    <div [ngClass]="showColor?'red':''">Hello World!</div>
+    <button (click)="changeColor()">Click</button>
+</div>
