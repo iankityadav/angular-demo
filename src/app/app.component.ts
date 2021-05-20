@@ -10,6 +10,7 @@ export class AppComponent {
   data:string = ""
   showColor:boolean = false
   age:number = 10
+  grade=['A','B','C','D']
   constructor(){
     console.log(`new data - ${this.data}`)
   }

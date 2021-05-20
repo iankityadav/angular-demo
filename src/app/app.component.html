@@ -23,3 +23,21 @@
         <div>You are not eligible to vote</div>
     </ng-template>
 </div>
+
+<div>
+    <ul>
+        <li *ngFor="let x of [1,2,3,4,5,6,7]">
+            {{x}}
+        </li>
+    </ul>
+</div>
+
+<div [ngSwitch]="grade[0]">
+    <div *ngSwitchCase="'A'">Grade is A</div>
+    <div *ngSwitchCase="'B'">Grade is B</div>
+    <div *ngSwitchDefault>Grade is not available</div>
+</div>
+
+<div *ngFor="let x of grade" [ngClass]="{'red':x=='A','green':x=='B','blue':x=='C'}">
+    {{x}}
+</div>
