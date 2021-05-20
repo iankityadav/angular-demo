@@ -11,6 +11,6 @@
 <app-interest></app-interest>
 -->
 <div>
-    <div [ngClass]="showColor?'red':''">Hello World!</div>
-    <button (click)="changeColor()">Click</button>
+    <div [ngClass]="showColor?'red':'blue'">Hello World!</div>
+    <button (click)="changeColor()" [ngStyle]="{'padding':'6px','font-size':'1.2em'}">Click</button>
 </div>
