@@ -9,7 +9,7 @@ export class AppComponent {
   title:string = 'demo';
   data:string = ""
   showColor:boolean = false
-  age:boolean = true
+  age:number = 10
   constructor(){
     console.log(`new data - ${this.data}`)
   }

@@ -16,7 +16,7 @@
 </div>
 
 <div>
-    <div *ngIf="age; else notAdult">
+    <div *ngIf="age>18; else notAdult">
         <div>You are eligible to vote</div>
     </div>
     <ng-template #notAdult>
