@@ -14,3 +14,12 @@
     <div [ngClass]="showColor?'red':'blue'">Hello World!</div>
     <button (click)="changeColor()" [ngStyle]="{'padding':'6px','font-size':'1.2em'}">Click</button>
 </div>
+
+<div>
+    <div *ngIf="age; else notAdult">
+        <div>You are eligible to vote</div>
+    </div>
+    <ng-template #notAdult>
+        <div>You are not eligible to vote</div>
+    </ng-template>
+</div>
